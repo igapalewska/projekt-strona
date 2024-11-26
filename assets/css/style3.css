@@ -1,0 +1,118 @@
+/* Styl ogólny */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.;
+}
+ 
+/* Nagłówek strony głównej */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #dac4c4;
+    border-bottom: 2px solid #ddd;
+}
+ 
+.header-left {
+    flex: 0 0 150px; /* Obraz po lewej stronie */
+}
+ 
+.header-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+ 
+.header-right {
+    flex: 1;
+    padding-left: 20px;
+}
+ 
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+ 
+.logo p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+ 
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+ 
+.nav-links li a {
+    text-decoration: none;
+    color: #186830;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+ 
+.nav-links li a:hover {
+    color: #4faa7d;
+}
+ 
+/* Nagłówek podstrony koncertów */
+.header-concerts {
+    background-image: url('assets/images/sobel2.jfif'); /* Ścieżka do tła */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+ 
+.header-concerts::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+ 
+.header-text {
+    position: relative;
+    z-index: 2;
+}
+ 
+.header-text h1 {
+    font-size: 36px;
+    margin: 0;
+}
+ 
+.header-text p {
+    font-size: 18px;
+    margin: 5px 0 0;
+}
+ 
+/* Styl dla głównej zawartości */
+main {
+    padding: 20px;
+}
+ 
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+ 
